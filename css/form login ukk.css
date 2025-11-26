@@ -1,0 +1,236 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../gambar/wallpaper.webp'); 
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 12px;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border-bottom: white;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+    color: slateblue;
+    transition: color .3s ease-out;
+}
+
+.topnav {
+    padding: 0 50px;
+}
+
+.search-box input {
+    padding: 9px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    float: right;
+    margin-right: 7px;
+    margin-top: 8px;
+    border-radius: 12px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    background-color: white;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+
+.main-content {
+    height: calc(100vh - 59px);
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-right: 10%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card {
+    width: 300px;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: transparan;
+    border-radius: 8px;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: white;
+}
+
+.field {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    border: none;
+    border: transparent;
+    border-bottom: solid 2px white;
+    border-radius: 4px;
+    padding: .8em 1em;
+}
+
+.input-icon {
+    height: 1.1em;
+    width: 1.1em;
+    fill: white;
+}
+
+.input-holder {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #f5f5f5;
+    font-size: 1em;
+}
+
+.input-holder::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.btn {
+    margin: 1.5rem 0 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: .9em;
+    padding: 0.8em 1.2em;
+    background-color: white;
+    color: #686868;
+    box-shadow: 0 4px 12px 0 rgba(59, 57, 49, 0.5);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.btn-link {
+    color: #f5f5f5;
+    display: block;
+    font-size: .85em;
+    transition: color .3s ease-out;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-link:hover {
+    color: slateblue;
+}
+
+.main-content {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 170px;
+
+}
+
+.text-container {     
+    color: white;
+    height: calc(100vh - 60);
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main-head h1 {
+    height: 75px;
+    font-size: 34px;
+    font-weight: bold;
+    animation: berubahWarna 2s infinite alternate;
+}
+.main-head h2 {
+    font-size: 34px;
+    font-weight: bold;
+    animation: berubahWarna 2s infinite alternate;
+}
+
+@keyframes berubahWarna {
+    0% {color: blue;}
+    50% {color: blue;}
+}
+
+welcome-content h1 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 12em;
+    color: red;
+    animation: BerubahWarna;
+}
+
+.social-links a {
+        color: white;
+        font-size: 2em;
+        margin-right: 20px;
+        transition: color 0.3s, transform 0.3s;
+}
+
+      .social-links a:hover {
+        color: #07ffa0;
+        transform: scale(1.1);
+}
+
+.check-box {
+    font-size: .85em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check-box a {
+    color: white;
+    font-size: 14px;
+    transition: color .3s ease-out;
+    text-decoration: none;
+}
+
+.check-box a:hover {
+    color: slateblue;
+}
+
